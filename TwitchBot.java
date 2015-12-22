@@ -3,6 +3,10 @@ import java.awt.Robot;
 import java.awt.AWTException;
 import java.awt.event.KeyEvent;
 
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+
 import org.jibble.pircbot.*;
 
 public class TwitchBot extends PircBot {
@@ -12,8 +16,7 @@ public class TwitchBot extends PircBot {
 	public TwitchBot(String name) {
 		this.setName(name);
 		commands = new HashMap<String, String>();
-		commands.put("put", "on Message");
-		commands.put("lut", "\\mouse:1920:1080");
+		populateCommands();
 		try {
 			robot = new Robot();
 		} catch (AWTException a) {
@@ -42,6 +45,30 @@ public class TwitchBot extends PircBot {
 				robot.keyPress(c);
 				robot.keyRelease(c);
 			}
+		}
+	}
+
+	private void populateCommands() {
+		Scanner s = null;
+		try {
+			s = new Scanner(new File("settings.txt"));
+		} catch (FileNotFoundException e) {
+			System.out.println("File not found!");
+			e.printStackTrace();
+			System.exit(-1);
+		}
+		while(s.hasNextLine()) {
+			String line = s.nextLine();
+			String temp[] = line.split(" ");
+			String command = "";
+			if (temp.length > 2) {
+				for (int i = 1; i < temp.length; i++) {
+					command += temp[i];
+				}
+			} else {
+				command += temp[1];
+			}
+			commands.put(temp[0], command);
 		}
 	}
 }
