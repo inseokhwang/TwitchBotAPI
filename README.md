@@ -6,5 +6,5 @@ We have a Makefile running, and we'll publish it when we get fully working/accep
 Todo
 -------------------------------
 
-1. Have a proper map for key inputs (Inseok)
-2. Write a parser for settings.txt
+1. Write a parser for settings.txt (Inseok)
+2. Other possible features
