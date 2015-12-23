@@ -6,5 +6,6 @@ We have a Makefile running, and we'll publish it when we get fully working/accep
 Todo
 -------------------------------
 
-1. Write a parser for settings.txt (Inseok)
-2. Other possible features
+1. Write a more complete and featureful parser for settings.txt (Inseok)
+2. Implement Democracy/Poll System(Inseok)
+3. Other possible features
