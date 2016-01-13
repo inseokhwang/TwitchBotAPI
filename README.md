@@ -34,9 +34,9 @@ Just copy and paste into the appropriate line without any spaces.
 
 e.g. Format
 
-CHANNEL-tyuyhnbnm
-ID-twitchbotbulbazoid
-OAUTH-oauth:rheeeeeeeeeeeeeeeeeeeeeeeeee
+    CHANNEL-tyuyhnbnm   
+    ID-twitchbotbulbazoid   
+    OAUTH-oauth:rheeeeeeeeeeeeeeeeeeeeeeeeee   
 
 Settings.txt
 -------------------------------
@@ -44,8 +44,8 @@ You'll noticce a settings.txt file in the directory. The TwitchBot.java is respo
 
 e.g. Format
 
-hello hello world		// !hello  =  types "hello world" on the host computer 
-mouse \mouse:1920:1080		// !mouse  =  sets the host computer's mouse on (1920,1080) - note I haven't implemented click yet
+    hello hello world		// !hello  =  types "hello world" on the host computer     
+    mouse \mouse:1920:1080		// !mouse  =  sets the host computer's mouse on (1920,1080) - note I haven't implemented click yet    
 
 Todo
 -------------------------------
