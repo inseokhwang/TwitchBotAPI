@@ -1,3 +1,4 @@
 Makefile
 *.class
 ibuildrun.bat
+config.txt

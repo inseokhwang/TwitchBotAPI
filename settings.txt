@@ -1,0 +1,4 @@
+put HELLO WORLD
+fuk yolo
+lut \mouse:1920:1080
+wat mouse:0:0

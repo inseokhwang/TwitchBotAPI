@@ -1,7 +1,7 @@
-Twitch Bot API
+Twitch Plays Bot API
 =========================
 
-We have a Makefile running, and we'll publish it when we get fully working/acceptable level of work done, as we have our OAuth key included in our makefile for ease of development.
+A Twitch bot used for creating Twitch Plays channel. There are more additional features we're planning on implementing, but the basic features (such as controlling what the host computer types from twitch chat)
 
 How to build
 ------------------------------
@@ -27,6 +27,16 @@ Linux
 Or on any platform
 
     java -cp lib/*;* TwitchBotMain
+
+Configuring IRC login - config.txt
+------------------------------
+Just copy and paste into the appropriate line without any spaces.
+
+e.g. Format
+
+CHANNEL-tyuyhnbnm
+ID-twitchbotbulbazoid
+OAUTH-oauth:rheeeeeeeeeeeeeeeeeeeeeeeeee
 
 Settings.txt
 -------------------------------

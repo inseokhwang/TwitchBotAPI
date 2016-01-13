@@ -10,8 +10,12 @@ import java.io.FileNotFoundException;
 import org.jibble.pircbot.*;
 
 public class TwitchBot extends PircBot {
+
 	HashMap<String, String> commands;
 	Robot robot;
+
+	private int democracyTimer = 1000;
+	HashMap<String, Integer> democracyCount;
 
 	public TwitchBot(String name) {
 		this.setName(name);
@@ -70,5 +74,13 @@ public class TwitchBot extends PircBot {
 			}
 			commands.put(temp[0], command);
 		}
+	}
+
+	private void chaosMode(String input) {
+
+	}
+
+	private void democracyMode(String input) {
+
 	}
 }
